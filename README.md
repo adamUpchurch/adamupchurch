@@ -145,6 +145,15 @@ In the right panel, select *JSON editor* and paste the following:
               "label" : "about link",
               "placeholder" : "ie. Github"
             }
+          },
+          "about_link" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "hyperlink",
+              "allowTargetBlank" : true,
+              "label" : "about link",
+              "placeholder" : "ie. Github"
+            }
           }
         },
         "label" : "about links"

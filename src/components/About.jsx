@@ -83,15 +83,17 @@ const AboutActions = styled("div")`
 const About = ({ bio, socialLinks }) => (
     <AboutContainer>
         <AboutLinkContainer>
-            {socialLinks.map((social, i) => (
+            {socialLinks.map((social, i) => {
+                const linkNames = ["Github", "LinkedIn", "Twitter"]
+                return(
                 <AboutLink
                     key={i}
-                    href={social.about_link[0].spans[0].data.url}
+                    href={`https://www.${social.about_link[0].text}`}
                     target="_blank" rel="noopener noreferrer">
-                    {social.about_link[0].text}
+                    {`${linkNames[i]}`}
                     <span>&#8594;</span>
                 </AboutLink>
-            ))}
+            )})}
         </AboutLinkContainer>
         <AboutBio>
             {RichText.render(bio)}
