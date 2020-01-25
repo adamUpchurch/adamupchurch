@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import styled from "@emotion/styled";
 import colors from "styles/colors";
 import Logo from "components/_ui/Logo";
-import spooch from "images/oscar-icon.png"
+import spooch from "images/adam2.png"
 
 const FooterContainer = styled("div")`
     padding-top: 3.75em;
@@ -44,15 +44,15 @@ const FooterAuthor = styled("a")`
 `
 
 const FooterSpooch = styled("img")`
-    max-width: 33px;
+    max-width: 66px;
     margin-top: 0.25em;
 `
 
 const Footer = () => (
     <FooterContainer>
         <FooterAuthor href="https://marguerite.io">
+        <FooterSpooch className="FooterSpooch" src={spooch} />
             © 2019 — Forked from Marguerite Roth
-            {/* <FooterSpooch className="FooterSpooch" src={spooch} /> */}
         </FooterAuthor>
     </FooterContainer>
 )
