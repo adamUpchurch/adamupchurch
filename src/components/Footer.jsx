@@ -52,7 +52,7 @@ const Footer = () => (
     <FooterContainer>
         <FooterAuthor href="https://marguerite.io">
         <FooterSpooch className="FooterSpooch" src={spooch} />
-            © 2019 — Forked from Marguerite Roth
+            © 2012 — Forked from Marguerite Roth
         </FooterAuthor>
     </FooterContainer>
 )
